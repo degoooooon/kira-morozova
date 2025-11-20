@@ -1,0 +1,31 @@
+.principles {
+  padding: 0;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.principles__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 24px;
+  font-family: "Playfair Display", sans-serif;
+  text-align: center;
+}
+
+.principles__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+  }
+}
