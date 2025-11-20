@@ -1,0 +1,11 @@
+@use "./blocks/header";
+@use "./blocks/nav";
+@use "./blocks/social";
+@use "./blocks/bannes";
+@use "./blocks/about";
+@use "./blocks/themes";
+
+// common
+@use "./common/fonst";
+@use "./common/global";
+@use "./common/utils";

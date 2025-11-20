@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  gap: 14px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @media(max-width: 1023px) {
+    margin: 0 0 0 25%;
+  }
+
+  @media(max-width: 767px) {
+    display: none;
+  }
+}
+
+.social__link {
+  border-radius: 50%;
+  border: 1px solid #857367;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  position: relative;
+}

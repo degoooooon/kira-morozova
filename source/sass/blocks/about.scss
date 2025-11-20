@@ -1,0 +1,48 @@
+.about {
+  padding: 100px 0 115px;
+}
+
+.about h2 {
+  font-size: 48px;
+  line-height: 37px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  margin: 0 0 22px;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 52% 48%;
+  padding: 0 90px 0 43px;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 67px;
+}
+
+.about__paragraph {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 17px;
+  letter-spacing: 0.01em;
+}
+
+.about__description {
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  line-height: 24px;
+  margin: 0 0 46px;
+}
+
+.about__button {
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  border-radius: 24px;
+  border: 2px solid #857367;
+  width: 212px;
+  height: 48px;
+  background-color: transparent;
+}
