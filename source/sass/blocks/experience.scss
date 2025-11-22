@@ -1,0 +1,42 @@
+.experience {
+  padding: 122px 0 89px;
+
+  h3 {
+    margin: 0 0 15px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #827064;
+  }
+
+  p {
+    color: #000000;
+    height: 65px;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+  }
+
+  li {
+    max-width: 574px;
+  }
+}
+
+.experience__title {
+  margin: 0 0 56px;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Playfair Display";
+  text-align: center;
+}
+
+.experience__list {
+  margin: 0;
+  padding: 0 18px 0 49px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 30px;
+}

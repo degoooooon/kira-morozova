@@ -1,0 +1,46 @@
+.diplomas {
+  padding: 103px 0 120px;
+  background-color: #768686;
+
+  .container {
+    max-width: 1475px;
+    padding: 0 70px 0 86px;
+    position: relative;
+  }
+
+  a img {
+    height: 235px;
+  }
+}
+
+.diplomas__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 22px;
+}
+
+.diplomas__buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 43%;
+  padding: 0 20px;
+}
+
+.diplomas__button {
+  width: 33px;
+  height: 33px;
+  background-color: transparent;
+  background-image: url("../../img/svg/button-arrow.svg");
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}

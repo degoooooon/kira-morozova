@@ -1,18 +1,12 @@
 .banner {
   min-height: 703px;
   position: relative;
+  background-color: #a7802c;
+  background-size: cover;
 
   @media(max-width: 1279px) {
     min-height: 400px;
   }
-}
-
-.banner__bg {
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 
 .banner img {
@@ -79,6 +73,7 @@
   height: 58px;
   border-radius: 29px;
   z-index: 1;
+  cursor: pointer;
 }
 
 .banner .banner__container {

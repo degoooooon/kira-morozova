@@ -1,31 +1,61 @@
 .principles {
-  padding: 0;
+  padding: 113px 0 82px;
   background-size: cover;
   color: #ffffff;
+  background-color: #503e2763;
+  min-height: 778px;
+}
+
+.principles__container {
+  padding: 0 50px;
 }
 
 .principles__title {
   text-transform: uppercase;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 27px;
   font-family: "Playfair Display", sans-serif;
   text-align: center;
+  margin: 0 0 74px;
+  font-weight: 400;
 }
 
 .principles__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 64px;
+  row-gap: 70px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    position: relative;
+    padding-left: 50px;
+  }
 
   h3 {
     font-size: 24px;
-    letter-spacing: 1px;
+    letter-spacing: 0.03em;
     line-height: 28px;
-    margin: 0;
+    margin: 0 0 15px;
+
+    &::before {
+      content: "";
+      width: 35px;
+      height: 36px;
+      background-image: url("../../img/svg/arrow.svg");
+      position: absolute;
+      left: 0;
+      top: -8px;
+    }
   }
 
   p {
     font-size: 16px;
     line-height: 18px;
     margin: 0;
+
+
   }
 }

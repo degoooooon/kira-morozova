@@ -2,6 +2,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px 0 104px;
+  background-color: #1aa2ac;
 }
 
 .themes__container {
@@ -41,6 +42,7 @@
   background-color: #ffffff;
   position: relative;
   z-index: 1;
+  min-width: 244px;
 
   &:first-child {
     grid-column: 1 / 5;
