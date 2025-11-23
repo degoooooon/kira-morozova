@@ -3,6 +3,7 @@
   background-size: cover;
   padding: 100px 0 104px;
   background-color: #1aa2ac;
+  background-image: url("../../img/back.jpg");
 }
 
 .themes__container {
@@ -18,6 +19,11 @@
   font-family: "Playfair Display";
   text-align: center;
   font-weight: 400;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .themes__subtitle {
@@ -28,6 +34,10 @@
   color: #4d4d4d;
   font-weight: 900;
   text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .themes__list {
@@ -35,6 +45,14 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
   counter-reset: section;
+
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .themes__item {
@@ -44,13 +62,31 @@
   z-index: 1;
   min-width: 244px;
 
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+  }
+
   &:first-child {
     grid-column: 1 / 5;
     padding: 37px 19px 42px;
 
+    @media (max-width: 1150px) {
+      grid-column: 1 / 3;
+    }
+
+    @media (max-width: 768px) {
+      grid-column: 1 / 2;
+      padding: 20px 10px;
+    }
+
     .themes__sublist {
       column-count: 2;
       padding: 0 50px;
+
+      @media(max-width: 768px) {
+        column-count: 1;
+        padding: 0;
+      }
     }
 
     &::after {
@@ -91,5 +127,9 @@
     position: absolute;
     top: 7px;
     left: 0;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
   }
 }

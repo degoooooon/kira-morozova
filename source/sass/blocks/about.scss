@@ -18,6 +18,10 @@
   max-width: 1400px;
   margin: 0 auto;
   gap: 67px;
+
+  @media(max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about__paragraph {

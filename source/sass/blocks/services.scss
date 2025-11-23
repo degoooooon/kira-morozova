@@ -28,6 +28,10 @@
   list-style-type: none;
   margin: 0 0 80px;
 
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
   li {
     background-color: #827064;
     color: #fffffF;
@@ -38,6 +42,10 @@
     display: grid;
     grid-template-columns: 55% 1fr;
     height: 100%;
+
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   h3 {
@@ -55,6 +63,7 @@
   img {
     height: 100%;
     object-fit: cover;
+    width: 100%;
   }
 }
 

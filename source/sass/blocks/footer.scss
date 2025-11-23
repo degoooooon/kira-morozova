@@ -1,13 +1,25 @@
-.footer {
-  padding: 0;
+.footer__top {
+  padding: 109px 0 110px;
   color: #ffffff;
   background-color: #454545;
 }
 
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+
+  &--bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .footer__title {
-  margin: 0;
+  margin: 0 0 20px;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: 400;
   font-family: "Playfair Display", sans-serif;
@@ -17,4 +29,67 @@
   font-weight: 900;
   font-size: 20px;
   line-height: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.footer__list {
+  display: flex;
+  max-width: 184px;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  margin-right: 18px;
+  margin-bottom: 18px;
+}
+
+.footer__link {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  width: 28px;
+  display: flex;
+  height: 29px;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: "";
+    width: 18px;
+    height: 17px;
+    background-color: #ffffff;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  &--whatsapp::after {
+    mask-image: url("../../img/svg/wh.svg");
+  }
+
+  &--instagram::after {
+    mask-image: url("../../img/svg/inst.svg");
+  }
+
+  &--vk::after {
+    mask-image: url("../../img/svg/vk.svg");
+  }
+
+  &--tg::after {
+    mask-image: url("../../img/svg/tg.svg");
+  }
+}
+
+.footer__bottom {
+  background-color: #000000;
+  color: #ffffff;
+
+  a {
+    color: #ffffff;
+  }
 }

@@ -4,6 +4,7 @@
   color: #ffffff;
   background-color: #503e2763;
   min-height: 778px;
+  background-image: url("../../img/back-2.jpg");
 }
 
 .principles__container {
@@ -29,9 +30,21 @@
   padding: 0;
   list-style-type: none;
 
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   li {
     position: relative;
     padding-left: 50px;
+
+    @media (max-width: 768px) {
+      padding-left: 35px;
+    }
   }
 
   h3 {

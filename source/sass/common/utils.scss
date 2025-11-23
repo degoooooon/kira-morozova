@@ -19,4 +19,14 @@
 .container {
   max-width: 1400px;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+  }
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
