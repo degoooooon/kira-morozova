@@ -1,5 +1,10 @@
 .header {
   padding: 12px 0 10px;
+  position: fixed;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, .2);
 }
 
 .header__container {
@@ -14,4 +19,8 @@
 
 .header__logo {
   margin-right: 6%;
+
+  img {
+    max-width: 121px;
+  }
 }

@@ -1,9 +1,102 @@
+.nav {
+  width: 100%;
+  display: flex;
+
+  @media (max-width: 1180px) {
+    justify-content: end;
+  }
+}
+
+.nav__panel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  @media (max-width: 1180px) {
+    display: none;
+
+    &.nav__panel--visible {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      right: 0;
+      bottom: 0;
+      background-color: #ffffff;
+      z-index: 20;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+  }
+}
+
+.nav__toggle {
+  order: 1;
+  margin-left: 20px;
+  border: 0;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+
+  // три линии
+  &::before,
+  &::after,
+  span {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 32px;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease;
+  }
+
+  &::before {
+    top: 8px;
+  }
+
+  span {
+    top: 15px;
+  }
+
+  &::after {
+    top: 22px;
+  }
+
+  // состояние открыто
+  &--opened {
+    &::before {
+      top: 15px;
+      transform: rotate(45deg);
+    }
+
+    span {
+      opacity: 0;
+    }
+
+    &::after {
+      top: 15px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 .nav__list {
   display: flex;
   gap: 28px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 
-  @media (max-width: 1279px) {
-    display: none;
+  @media (max-width: 1180px) {
+    flex-direction: column;
+    margin: 0 auto 30px;
   }
 }
 
@@ -12,6 +105,25 @@
   font-weight: 400;
   font-size: 18px;
   color: #4d4d4d;
+  position: relative;
+
+  @media (max-width: 1180px) {
+    font-size: 30px;
+    line-height: 43px;
+  }
+
+  &:hover {
+    color: #000000;
+  }
+
+  &:hover::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 2px;
+    display: block;
+    background-color: #000000;
+  }
 }
 
 .nav__phone {
@@ -21,9 +133,10 @@
   gap: 6px;
   margin-left: auto;
   margin-right: 37px;
+  position: relative;
 
-  @media (max-width: 1279px) {
-    display: none;
+  @media (max-width: 1180px) {
+    margin: 0 auto 20px;
   }
 }
 
@@ -34,4 +147,14 @@
   font-weight: 900;
   font-family: "Roboto";
   text-decoration: none;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+.nav__toggle {
+  @media (min-width: 1181px) {
+    display: none;
+  }
 }

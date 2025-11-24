@@ -9,46 +9,55 @@
   </head>
   <body>
     <div class="wrapper">
+      <div class="overlay"></div>
       <header class="header">
         <div class="container header__container">
           <a class="header__logo" href="#">
-            <img src="./img/logo.png" alt="Логотип">
+            <img src="./img/logo.png" alt="Логотип" width="121" height="51">
           </a>
           <nav class="nav" aria-label="Основная навигация">
-            <ul class="nav__list list">
-              <li class="nav__item"><a class="nav__link" href="/banner">Обо мне</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Услуги</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Тема терапии</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Мой опыт</a></li>
-              <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-            </ul>
+            <button class="nav__toggle" type="button" aria-label="Меню" aria-expanded="false">
+              <span></span>
+            </button>
+
+            <div class="nav__panel">
+              <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#about">Обо мне</a></li>
+                <li class="nav__item"><a class="nav__link" href="#services">Услуги</a></li>
+                <li class="nav__item"><a class="nav__link" href="#themes">Тема терапии</a></li>
+                <li class="nav__item"><a class="nav__link" href="#experience">Мой опыт</a></li>
+                <li class="nav__item"><a class="nav__link" href="#footer__top">Контакты</a></li>
+              </ul>
+
+              <div class="nav__phone">
+                <a href="tel:+78652560789" aria-label="Позвонить по номеру +7 (8652) 56-07-89">+7 (8652) 56-07-89</a>
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" width="12" height="13"><defs><image  width="12" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAMAAACq939wAAAAAXNSR0IB2cksfwAAAHJQTFRFhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNn+Ou7rAAAACZ0Uk5TAGTOH1D/d+HQAvwS+WMDlPMgkYxav2DxblT+mTEk5xS8c8Xc25oEtDx+AAAAa0lEQVR4nD3N0QqDMAyF4f+grLAxVMrYlcje/7UmggxxZVNQFCva5iZ8yQkRkhaOUio0BZiVROOJ6wyXf9wYyZ3IhltPuCl+3LsArCP7BPDoKVoSlh08O6y+uf/uUaqJMahU7y3XMXv5jN4bhggWTWF1HasAAAAASUVORK5CYII="/></defs><style></style><use  href="#img1" x="0" y="0"/></svg>
+              </div>
+
+              <ul class="social">
+                <li class="social__item">
+                  <a class="social__link social__link--whatsapp" href="#">
+                    <span class="visually-hidden">Ватсап</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--instagram" href="#">
+                    <span class="visually-hidden">Инстаграм</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--vk" href="#">
+                    <span class="visually-hidden">Вконтакте</span>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link social__link--tg" href="#">
+                    <span class="visually-hidden">Телеграм</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </nav>
-          <div class="nav__phone">
-            <a href="tel:+78652560789" aria-label="Позвонить по номеру +7 (8652) 56-07-89">+7 (8652) 56-07-89</a>
-            <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 13" width="12" height="13"><defs><image  width="12" height="13" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAANCAMAAACq939wAAAAAXNSR0IB2cksfwAAAHJQTFRFhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNnhXNn+Ou7rAAAACZ0Uk5TAGTOH1D/d+HQAvwS+WMDlPMgkYxav2DxblT+mTEk5xS8c8Xc25oEtDx+AAAAa0lEQVR4nD3N0QqDMAyF4f+grLAxVMrYlcje/7UmggxxZVNQFCva5iZ8yQkRkhaOUio0BZiVROOJ6wyXf9wYyZ3IhltPuCl+3LsArCP7BPDoKVoSlh08O6y+uf/uUaqJMahU7y3XMXv5jN4bhggWTWF1HasAAAAASUVORK5CYII="/></defs><style></style><use  href="#img1" x="0" y="0"/></svg>
-          </div>
-          <ul class="social">
-            <li class="social__item">
-              <a class="social__link social__link--whatsapp" href="#">
-                <img src="./img/svg/wh.svg" alt="Ватсап">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <img src="./img/svg/inst.svg" alt="Инстаграм">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#">
-                <img src="./img/svg/vk.svg" alt="Вконтакте">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--tg" href="#">
-                <img src="./img/svg/tg.svg" alt="Телеграмм">
-              </a>
-            </li>
-          </ul>
         </div>
       </header>
       <main class="main">
@@ -59,7 +68,7 @@
             <button class="banner__btn btn" type="button" >Записаться на прием</button>
           </div>
         </section>
-        <section class="about">
+        <section class="about" id="about">
           <div class="about__container">
             <div>
               <h2 class="about__title">Морозова Кира</h2>
@@ -72,7 +81,7 @@
             </div>
           </div>
         </section>
-        <section class="themes">
+        <section class="themes" id="themes">
           <div class="themes__container container">
             <h2 class="themes__title">Ко мне можно обратиться со следующими запросами</h2>
             <ul class="themes__list list">
@@ -126,7 +135,7 @@
             </ul>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
           <div class="services__container container">
             <h2 class="services__title">Услуги</h2>
             <ul class="services__list">
@@ -234,7 +243,7 @@
             </ul>
           </div>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
           <div class="container">
             <h2 class="experience__title">Мой опыт</h2>
             <ul class="experience__list">
@@ -276,31 +285,31 @@
         <section class="diplomas">
           <div class="diplomas__container container">
             <h2 class="visually-hidden">Мои дипломы</h2>
-            <div class="diplomas__swiper">
-              <ul class="diplomas__list">
-                <li>
-                  <a href="#">
+            <div class="diplomas__swiper swiper">
+              <ul class="diplomas__list swiper-wrapper">
+                <li class="diplomas__item">
+                  <a class="diplomas__link" href="#">
                     <img src="./img/diploma.jpg" alt="Диплом" width="309" height="235">
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="diplomas__item">
+                  <a class="diplomas__link" href="#">
                     <img src="./img/diploma.jpg" alt="Диплом" width="309" height="235">
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="diplomas__item">
+                  <a class="diplomas__link" href="#">
                     <img src="./img/diploma.jpg" alt="Диплом" width="309" height="235">
                   </a>
                 </li>
-                <li>
-                  <a href="#">
+                <li class="diplomas__item">
+                  <a class="diplomas__link" href="#">
                     <img src="./img/diploma.jpg" alt="Диплом" width="309" height="235">
                   </a>
                 </li>
               </ul>
             </div>
-            <div class="diplomas__buttons">
+            <div class="swiper-slide">
               <button class="diplomas__button diplomas__button--prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
@@ -312,7 +321,7 @@
         </section>
       </main>
       <footer class="footer">
-        <div class="footer__top">
+        <div class="footer__top" id="footer__top">
           <div class="footer__container container">
             <h2 class="footer__title">Мои контанты</h2>
             <div class="footer__wrapper">
@@ -355,9 +364,10 @@
               Создание сайта
               <img src="./" alt="">
             </a>
-          </div>   
+          </div>
         </div>
       </footer>
     </div>
+    <script type="module" src="js/main.js"></script>
   </body>
 </html>

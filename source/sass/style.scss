@@ -9,6 +9,9 @@
 @use "./blocks/diplomas";
 @use "./blocks/footer";
 @use "./blocks/experience";
+@use "./blocks//overlay";
+@use "../../node_modules/swiper/swiper";
+@use "../../node_modules/swiper/modules/navigation";
 
 // common
 @use "./common/fonst";

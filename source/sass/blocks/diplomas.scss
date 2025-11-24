@@ -1,5 +1,5 @@
 .diplomas {
-  padding: 103px 0 120px;
+  padding: 103px 0 119px;
   background-color: #768686;
 
   .container {
@@ -7,6 +7,15 @@
     padding: 0 70px 0 86px;
     position: relative;
   }
+}
+
+.diplomas__item {
+  min-width: 309px;
+  flex-shrink: 0;
+}
+
+.diplomas__swiper {
+  overflow: hidden;
 }
 
 .diplomas__list {
@@ -39,4 +48,10 @@
   &--next {
     transform: rotate(180deg);
   }
+}
+
+.diplomas__link {
+  display: block;
+  background-color: #ffffff;
+  padding: 15px 10px;
 }
