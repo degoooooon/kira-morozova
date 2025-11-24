@@ -10,8 +10,8 @@
 @use "./blocks/footer";
 @use "./blocks/experience";
 @use "./blocks//overlay";
-@use "../../node_modules/swiper/swiper";
-@use "../../node_modules/swiper/modules/navigation";
+@use "./vendor/swiper";
+@use "./blocks/btn";
 
 // common
 @use "./common/fonst";

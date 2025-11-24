@@ -9,11 +9,6 @@
   }
 }
 
-.diplomas__item {
-  min-width: 309px;
-  flex-shrink: 0;
-}
-
 .diplomas__swiper {
   overflow: hidden;
 }
@@ -26,7 +21,7 @@
   gap: 22px;
 }
 
-.diplomas__buttons {
+.diplomas__controls {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -40,7 +35,7 @@
   width: 33px;
   height: 33px;
   background-color: transparent;
-  background-image: url("../../img/svg/button-arrow.svg");
+  background-image: url("../img/svg/button-arrow.svg");
   border: 0;
   padding: 0;
   cursor: pointer;

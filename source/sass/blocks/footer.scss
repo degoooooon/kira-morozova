@@ -59,30 +59,43 @@
   height: 29px;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  &::after {
-    content: "";
-    width: 18px;
-    height: 17px;
+  &--whatsapp {
+    background-image: url("../img/icon/wh.png");
+
+    &:hover {
+      background-image: url("../img/icon/wh-2.png");
+    }
+  }
+
+  &--instagram {
+    background-image: url("../img/icon/inst.png");
+
+    &:hover {
+      background-image: url("../img/icon/inst-2.png");
+    }
+  }
+
+  &--vk {
+    background-image: url("../img/icon/vk.png");
+
+    &:hover {
+      background-image: url("../img/icon/vk-2.png");
+    }
+  }
+
+  &--tg {
+    background-image: url("../img/icon/tg.png");
+
+    &:hover {
+      background-image: url("../img/icon/tg-2.png");
+    }
+  }
+
+  &:hover {
     background-color: #ffffff;
-    mask-repeat: no-repeat;
-    mask-position: center;
-  }
-
-  &--whatsapp::after {
-    mask-image: url("../../img/svg/wh.svg");
-  }
-
-  &--instagram::after {
-    mask-image: url("../../img/svg/inst.svg");
-  }
-
-  &--vk::after {
-    mask-image: url("../../img/svg/vk.svg");
-  }
-
-  &--tg::after {
-    mask-image: url("../../img/svg/tg.svg");
   }
 }
 

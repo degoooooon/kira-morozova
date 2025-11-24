@@ -18,22 +18,38 @@
   color: #857367;
 
   &--whatsapp {
-    background-image: url("../../img/svg/wh.svg");
+    background-image: url("../img/icon/wh-2.png");
+
+    &:hover {
+      background-image: url("../img/icon/wh.png");
+    }
   }
 
   &--instagram {
-    background-image: url("../../img/svg/inst.svg");
+    background-image: url("../img/icon/inst-2.png");
+
+    &:hover {
+      background-image: url("../img/icon/inst.png");
+    }
   }
 
   &--vk {
-    background-image: url("../../img/svg/vk.svg");
+    background-image: url("../img/icon/vk-2.png");
+
+    &:hover {
+      background-image: url("../img/icon/vk.png");
+    }
   }
 
   &--tg {
-    background-image: url("../../img/svg/tg.svg");
+    background-image: url("../img/icon/tg-2.png");
+
+    &:hover {
+      background-image: url("../img/icon/tg.png");
+    }
   }
 
   &:hover {
-    opacity: 0.5;
+    background-color: #857367;
   }
 }
